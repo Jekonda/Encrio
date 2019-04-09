@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Cipher
 {
@@ -169,10 +170,19 @@ namespace Cipher
                 EncPosition = 14
             }
         };
-        
+
         public static readonly string GASLO = "SLOGAN_";
         public static readonly string TASK4KEY = "ETHERIUM";
         public static readonly string TASK6KEY = "FORECAST";
 
+        public static readonly string[,] Matrix =
+        {
+            {"K", "W", "R", "H", ","},
+            {"P", "T", "B", "N", "U"},
+            {"_", "D", "O", "Z", "E"},
+            {"J", "F", ".", "C", "Y"},
+            {"V", "G", "A", "I", "X"},
+            {"M", "-", "Q", "L", "S"}
+        };
     }
 }

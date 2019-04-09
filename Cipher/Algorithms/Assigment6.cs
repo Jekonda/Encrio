@@ -16,14 +16,12 @@ namespace Cipher.Algorithms
             var words = DataSource.TASK6KEY
                 .Select(x => new {Letter = x.ToString(), Values = new List<char>()})
                 .ToList();
-            Regex.Matches(input.Replace(" ", "").ToUpper(), @"\w{0,7}", RegexOptions.Multiline)
+            Regex.Matches(input.Replace(" ", "").ToUpper(), @"\w{1," + words.Count + "}", RegexOptions.Multiline)
                 .ToList().ForEach(item =>
                 {
                     var list = item.ToString().ToList();
                     for (var i = 0; i < list.Count; i++)
-                    {
                         words[i].Values.Add(list[i]);
-                    }
                 });
             return string.Join("  ", words.OrderBy(x => x.Letter).Select(x => string.Join("", x.Values)));
         }
