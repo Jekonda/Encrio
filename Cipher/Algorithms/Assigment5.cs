@@ -20,6 +20,7 @@ namespace Cipher.Algorithms
 
         private string FindEncrypted(string code)
         {
+            if (code.Length == 1) return code;
             var positions = code.Select(GetPosition).ToList();
             var temp = positions[0].Row;
             positions[0].Row = positions[1].Row;
@@ -29,7 +30,6 @@ namespace Cipher.Algorithms
                 result.Append(DataSource.Matrix[positions[i].Row, positions[i].Column]);
             return result.ToString();
         }
-
 
         private Element GetPosition(char elem)
         {
