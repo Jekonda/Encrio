@@ -172,5 +172,7 @@ namespace Cipher
         
         public static readonly string GASLO = "SLOGAN_";
         public static readonly string TASK4KEY = "ETHERIUM";
+        public static readonly string TASK6KEY = "FORECAST";
+
     }
 }

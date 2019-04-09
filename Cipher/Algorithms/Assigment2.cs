@@ -8,8 +8,6 @@ namespace Cipher.Algorithms
         /// <summary>
         /// Зашифрувати відкритий текст KOZHUKHOVSKY над латинським алфавітом за допомогою гаслового шифру.
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
         public string EncryptData(string input)
         {
             var gaslo = DataSource.GASLO.MapToList();

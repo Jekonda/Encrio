@@ -11,8 +11,6 @@ namespace Cipher.Algorithms
         /// латинським алфавітом за допомогою шифру Віженера з
         /// довільно вибраним разовим ключем.
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
         public string EncryptData(string input)
         {
             var byInput = input.MapToList()

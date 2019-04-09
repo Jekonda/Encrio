@@ -19,6 +19,9 @@ namespace Cipher
             
             context.SetEncryptor(new Assigment4());
             Console.WriteLine("Result: {0}\n", context.Encrypt("STEPANENKO"));
+            
+            context.SetEncryptor(new Assigment6());
+            Console.WriteLine("Result: {0}\n", context.Encrypt("STEPANENKO EVGENIY GENADIYOVICH"));
         }
     }
 }

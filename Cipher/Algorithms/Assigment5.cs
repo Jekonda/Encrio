@@ -7,8 +7,6 @@ namespace Cipher.Algorithms
         /// латинським алфавітом за допомогою шифру Плейфера.
         /// Для створення ключа скористатись ключем, отриманим в завданні 1
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
         public string EncryptData(string input)
         {
             
